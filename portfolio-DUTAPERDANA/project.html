@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Tambahkan ini untuk link ke style.css yang dimodifikasi -->
+  <style>
+    /* Modifikasi CSS inline untuk kartu proyek, digabungkan dengan warna baru */
+    .project-card {
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: .3s;
+      background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%); /* Gradien kuning-oranye untuk kartu, serupa dengan header */
+      color: #2d3436; /* Warna teks gelap untuk kontras */
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      background: linear-gradient(135deg, #fab1a0 0%, #ffeaa7 100%); /* Gradien terbalik saat hover */
+    }
+    .btn-view {
+      background-color: #e74c3c; /* Tetap merah seperti asli, tapi bisa diubah jika mau */
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 6px;
+      transition: .3s;
+    }
+    .btn-view:hover {
+      background-color: #c0392b; /* Lebih gelap saat hover */
+      color: white;
+    }
+    /* Judul halaman project */
+    h2 {
+      color: #e17055; /* Warna merah-oranye untuk judul, serupa dengan header h1 */
+    }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="project.html">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-5 text-center">
+  <h2 class="mb-4 fw-semibold">Hasil Karya Saya</h2>
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4 class="mb-3 fw-bold">Game Tebak Angka</h4>
+        <p>Pengembangan aplikasi interaktif sederhana menggunakan HTML, CSS, dan JavaScript untuk melatih logika pemrograman.</p>
+        <a href="https://dutaproject.gt.tc/GameTebakAngka/" class="btn-view">Lihat Hasil</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4 class="mb-3 fw-bold">Biodata HTML Pertama</h4>
+        <p>Pembuatan halaman biodata berbasis HTML sebagai dasar pengenalan struktur dan elemen dalam pengembangan web.</p>
+        <a href="https://dutaproject.gt.tc/BiodataHTML/" class="btn-view">Lihat Hasil</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="project-card">
+        <h4 class="mb-3 fw-bold">Website Profil Perusahaan</h4>
+        <p>Pembuatan website profil perusahaan yang menampilkan informasi bisnis, layanan, dan struktur organisasi secara profesional.</p>
+        <a href="https://dutaproject.gt.tc/WebsiteProfilPerusahaan/" class="btn-view">Lihat Hasil</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
